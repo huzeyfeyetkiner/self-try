@@ -1,5 +1,10 @@
 import { Slot, Stack } from "expo-router";
 
-export default function HomeLayout() {
-  return <Stack screenOptions={{ headerShown: true }} />;
+export default function AuthLayout() {
+  return (
+    <Stack screenOptions={{ headerShown: true }}>
+      <Stack.Screen name="login" options={{ title: "Login" }} />
+      <Stack.Screen name="signup" options={{ title: "Signup" }} />
+    </Stack>
+  );
 }
