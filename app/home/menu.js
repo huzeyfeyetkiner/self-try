@@ -2,7 +2,7 @@ import { View, Text } from "react-native";
 
 function Menu() {
   return (
-    <View className="flex-1 justify-center items-center bg-gray">
+    <View className="flex-1 justify-center items-center bg-gray-500">
       <Text className="text-white text-lg">Menu Screen</Text>
     </View>
   );
