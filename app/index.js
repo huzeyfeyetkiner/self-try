@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import { Link } from "expo-router";
+import { NativeWindStyleSheet } from "nativewind";
 
 function home() {
   return (
@@ -11,3 +12,7 @@ function home() {
   );
 }
 export default home;
+
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
