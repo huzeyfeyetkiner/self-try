@@ -12,7 +12,7 @@ export default function ModalLayout() {
 
       <Stack.Screen
         name="cookAi"
-        options={{ presentation: "containedModal", headerTitle: "Cook Ai" }}
+        options={{ presentation: "modal", headerShown: false }}
       />
     </Stack>
   );
