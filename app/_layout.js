@@ -1,5 +1,5 @@
 import { Slot, Stack } from "expo-router";
 
-export default function HomeLayout() {
+export default function RootLayout() {
   return <Slot screenOptions={{ headerShown: true }} />;
 }

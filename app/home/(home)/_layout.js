@@ -1,6 +1,6 @@
 import { Slot, Stack } from "expo-router";
 
-export default function HomeLayout() {
+export default function ModalLayout() {
   return (
     <Stack>
       <Stack.Screen
