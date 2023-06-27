@@ -5,15 +5,25 @@ const index = () => {
 
   return (
     <View className="flex-1 justify-center items-center text-white bg-blue-500 p-4 ">
-      <TouchableOpacity className="text-white bg-red-500 p-4 w-50 mb-5">
-        <Link href="./cookAi">cookAi</Link>
+      <TouchableOpacity
+        className="text-white bg-red-500 p-4 w-50 mb-5"
+        onPress={() => navigate.navigate("cookAi")}
+      >
+        <Text>Cook Ai</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        className="text-white bg-red-500 p-4 w-50 mb-5"
+        onPress={() => navigate.navigate("ocrScreen")}
+      >
+        <Text>OCR Screen</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         className="text-white bg-red-500 p-4 w-50"
-        onPress={() => navigate.navigate("ocrScreen")}
+        onPress={() => navigate.navigate("recipeScreen")}
       >
-        <Text>OCR Screen</Text>
+        <Text>Recipe Card</Text>
       </TouchableOpacity>
     </View>
   );
