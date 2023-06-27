@@ -1,8 +1,7 @@
-import { View, Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "expo-router";
-const ocrScreen = () => {
+import { View, Text, TouchableOpacity } from "react-native";
+const randomScreen = () => {
   const navigation = useNavigation();
-
   return (
     <View className="flex-1 justify-center items-center relative">
       <TouchableOpacity
@@ -12,12 +11,8 @@ const ocrScreen = () => {
         <Text>Back</Text>
       </TouchableOpacity>
 
-      <Text>OCR Screen</Text>
-
-      <TouchableOpacity onPress={() => navigation.navigate("randomScreen")}>
-        <Text>Route another Screen</Text>
-      </TouchableOpacity>
+      <Text>randomScreen</Text>
     </View>
   );
 };
-export default ocrScreen;
+export default randomScreen;
